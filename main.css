@@ -133,7 +133,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
   display: flex;
   flex-flow:wrap ;
 }
-.clear {
+.register-main .clear {
   background-color: #ee0505;
   color: white;
   padding: 16px 20px;
@@ -144,7 +144,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
   opacity: 0.9;
   border-radius: 50px;
 }
-.register {
+.register-main .register {
   background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
