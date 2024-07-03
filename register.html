@@ -48,67 +48,65 @@
             <h1>Register Form</h1>
             <p>Please complete the following form to register for an account on our website</p>
         </div>
-
             <div class="register-main">
-                <form>
-                <p style="margin: 3px;"><b>Username*</b></p>
-                    <input type="text" placeholder="Enter Username" name="Username" id="user" required>
+                <form method="post" action="https://script.google.com/macros/s/AKfycbyow2PgbBKUL6WrYAFWASfiM7P8hwhRnUb_z0mV0tQOZNKA1eA2f-M6J2REM071qw/exec">
+                    <div class="registerForm">
+                      <p style="margin: 3px;"><b>Username</b></p>
+                      <input type="text" placeholder="Enter Username" name="Username" id="user" required>
+          
+                      <p style="margin: 3px;"><b>Email</b></p>
+                      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                  
+                      <p style="margin: 3px;"><b>Password</b></p>
+                      <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+                  
+                      <p style="margin: 3px;"><b>Repeat Password</b></p>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                      
+                      <p style="margin: 3px;"><b>Firstname</b></p>
+                      <input type="text" placeholder="Enter Firstname" name="Firstname" id="firstname" required>
+          
+                      <p style="margin: 3px;"><b>Surename</b></p>
+                      <input type="text" placeholder="Enter Surename" name="surename" id="surename" required>
+          
+                      <p style="margin: 3px;"><b>Gender</b></p>
 
-                <p style="margin: 3px;"><b>Email*</b></p>
-                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-                
-                <p style="margin: 3px;"><b>Password*</b></p>
-                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-                
-                <p style="margin: 3px;"><b>Firstname*</b></p>
-                    <input type="text" placeholder="Enter Firstname" name="firstname" id="firstname" required>
+                      <input type="radio" value="male"name="Gender" id="male" >
+                      <label for="male">male</label>
+                      <input type="radio" value="Female" name="Gender" id="female" >
+                      <label for="female">female</label>
+                      <input type="radio" value="other" name="Gender" id="other" >
+                      <label for="other">other</label>
 
-                <p style="margin: 3px;"><b>Surename*</b></p>
-                    <input type="text" placeholder="Enter Surename" name="surename" id="surename" required>
-
-                <p style="margin: 3px;"><b>Gender*</b></p>
-                <div class="Gender">
-                    <input type="radio" name="Gender" id="male" >
-                    <label for="male">male</label>
-                    <input type="radio" name="Gender" id="female" >
-                    <label for="female">female</label>
-                    <input type="radio" name="Gender" id="other" >
-                    <label for="other">other</label>
-                </div>
-                <p style="margin: 3px;"><b>Date Of Birth*</b></p>
-                    <input type="date" id="dob" required>
-                <p style="margin: 3px;"><b>Address*</b></p>
-                    <input type="text" placeholder="Enter your Address" name="address" id="addrress" required>
-                <p style="margin: 3px;"><b>Suburb*</b></p>
-                    <input type="text" placeholder="Enter your Suburb" name="suburb" id="suburb" required>
-                <p style="margin: 3px;"><b>Postcode*</b></p>
-                    <input type="number" placeholder="Enter Postcode" name="postcode" id="postcode" required>
-
-                <p style="margin: 3px;"><b>State*</b></p>
-
-                <div class="select-container">
-                    <select name="state" class="select-menu">
-                      <option>ACT</option>
-                      <option>VIC</option>
-                      <option>NSW</option>
-                      <option>WA</option>
-                      <option>SA</option>
-                      <option>TAS</option>
-                      <option>NT</option>
-                      <option>QLD</option>
-                    </select>
-                </div>
-                <p style="margin: 3px;"><b>Phone Number*</b></p>
-                    <input type="tel"  placeholder="+61 123 456 789" name="phone" id="phone" required>
-                </form>
+                      <p style="margin: 3px;"><b>Date Of Birth</b></p>
+                      <input type="date" id="dob" name="DOB" required>
+                      <p style="margin: 3px;"><b>Address</b></p>
+                      <input type="text" placeholder="Enter your Address" name="address" id="addrress" required>
+                      <p style="margin: 3px;"><b>Suburb</b></p>
+                      <input type="text" placeholder="Enter your Suburb" name="suburb" id="suburb" required>
+                      <p style="margin: 3px;"><b>Postcode</b></p>
+                      <input type="number" placeholder="Enter Postcode" name="postcode" id="postcode" required>
+          
+                      <p style="margin: 3px;"><b>State</b></p>
+                      <select name="state" id="state" class="select-menu" required>
+                        <option>ACT</option>
+                        <option>VIC</option>
+                        <option>NSW</option>
+                        <option>WA</option>
+                        <option>SA</option>
+                        <option>TAS</option>
+                        <option>NT</option>
+                        <option>QLD</option>
+                      </select>
+                      <p style="margin: 3px;"><b>Phone Number</b></p>
+                      <input type="tel"  placeholder="+61 123 456 789" name="Phone" id="phone" required>
+                      <div class="buttons">
+                      <button type="clear" class="clear">Clear</button>
+                      <button type="submit" class="register" id="register">Register</button>
+                      </div>
+                    </div>
+                  </form>
              </div>
-        
-            <div class="external">
-                <button type="clear" class="finish-btn" id="clear">Clear</button>
-                <button type="submit" class="finish-btn"id="register">Register</button>
-            </div>
         </div>
         <div class="aside">
         <h2>Purchase</h2>
